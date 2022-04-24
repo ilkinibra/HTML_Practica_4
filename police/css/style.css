@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  font-family: sans-serif;
+}
+div span {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 70px;	
+}
+div span:first-child {
+  animation: red 0.5s linear infinite;
+  animation-delay: 0.25s;
+}
+div span:last-child {
+  animation: blue 0.5s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes red {
+  from {
+    text-shadow: 0 0 5px red,
+           0 0 15px red,
+           0 0 30px red,
+           0 0 60px red;
+  }
+}
+@keyframes blue {
+  from {
+    text-shadow: 0 0 5px blue,
+           0 0 15px blue,
+           0 0 30px blue,
+           0 0 60px blue;
+  }
+}
